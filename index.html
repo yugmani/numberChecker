@@ -10,30 +10,48 @@
 
   <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="jumbotron">
+  <div class="header">
     <h1 class="text-center">Number Guesser</h1>
-    <h2 class="text-center">See if you can guess the number the computer is thinker of!</h2>
+    <!-- <h2 class="text-center">See if you can guess the number the computer is thinker of!</h2> -->
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
 
-    <div class="card mt-1">
+    <div class="card">
       <div class="card-header">
-        <div class="card-body text-center">
-          <h3 class="card-title">Computer Pick</h3>
-          <h1 id="computer-pick" style="color:green">???</h1>
+        <div class="card-body text-center computer">
+          <div class="col-6 computer-pick">
+              <h3 class="card-title">Computer Pick</h3>
+            <h1 id="computer-pick" style="color:green">???</h1></div>
+          <div id="picked" class="col-6">
+              <h3 class="card-title">Your Pick</h3>
+              <div id="picked-number">???</div>
+          </div>
         </div>
       </div>
 
-      <div class="card mt-1">
+      <div id="show">
+        <div class="col-6 card show-result">
+            <div class="card-header">
+              <div class="card-body text-center">
+                <h3 class="card-title">Result</h3>
+                <div id="result">
+                    <h3 >-----</h3>
+                </div>
+             
+              </div>
+            </div>
+  
+          </div>
+      <div class="col-6 card">
         <div class="card-header">
           <div class="card-body text-center">
-            <h3 class="card-title">You Pick</h3>
+            <h3 class="card-title">Pick Number</h3>
             <button id="button-1" class="btn btn-danger btn-choice" value="1">
               <h1>1</h1>
             </button>
@@ -47,19 +65,17 @@
               <h1>4</h1>
             </button>
           </div>
+          <!-- <div id="do-again">
+            <label for="repeat">Do you want to play again?</label><br>
+            <input type="radio" id="play" name="repeat" value="play">
+            <label for="repeat">Play Again</label>
+            <input type="radio" id="no" name="repeat" value="no">
+            <label for="no-repeat">No More</label>
+          </div> -->
         </div>
-
-        <div class="card mt-1">
-          <div class="card-header">
-            <div class="card-body text-center">
-              <h3 class="card-title">Result</h3>
-              <div id="result"></div>
-              <div id="picked-number"></div>
-            </div>
-          </div>
-
+    </div>
+        
         </div>
-
         <script type="text/javascript" src="jquery_script.js">
         </script>
         <!-- <script type="text/javascript" src="vanilla_script.js">
