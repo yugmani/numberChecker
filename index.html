@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Number Checker</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="text-center">Number Guesser</h1>
+    <h2 class="text-center">See if you can guess the number the computer is thinker of!</h2>
+  </div>
+
+  <div class="container">
+
+    <div class="card mt-1">
+      <div class="card-header">
+        <div class="card-body text-center">
+          <h3 class="card-title">Computer Pick</h3>
+          <h1 id="computer-pick" style="color:green">???</h1>
+        </div>
+      </div>
+
+      <div class="card mt-1">
+        <div class="card-header">
+          <div class="card-body text-center">
+            <h3 class="card-title">You Pick</h3>
+            <button id="button-1" class="btn btn-danger btn-choice" value="1">
+              <h1>1</h1>
+            </button>
+            <button id="button-2" class="btn btn-danger btn-choice" value="2">
+              <h1>2</h1>
+            </button>
+            <button id="button-3" class="btn btn-danger btn-choice" value="3">
+              <h1>3</h1>
+            </button>
+            <button id="button-4" class="btn btn-danger btn-choice" value="4">
+              <h1>4</h1>
+            </button>
+          </div>
+        </div>
+
+        <div class="card mt-1">
+          <div class="card-header">
+            <div class="card-body text-center">
+              <h3 class="card-title">Result</h3>
+              <div id="result"></div>
+              <div id="picked-number"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <script type="text/javascript" src="jquery_script.js">
+        </script>
+        <!-- <script type="text/javascript" src="vanilla_script.js">
+        </script> -->
+</body>
+
+</html>
